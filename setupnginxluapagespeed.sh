@@ -148,8 +148,4 @@ sudo dpkg-buildpackage -b
 
 cd ..
 
-mkdir ${CURDIR}/output &>/dev/null
-rm ${CURDIR}/output/*.deb &>/dev/null
-cp *.deb ${CURDIR}/output
-
-echo -e "\mYou can remove /tmp/build, it is not needed anymore.\n\n\Find your .deb packages on ${CURDIR}/output"
+echo -e "\mAfter copying deb packages from /tmp/build to your localhost outside docker, just remove the container to free space"
