@@ -92,8 +92,8 @@ tar xzvf ngx_redis2.tar.gz
 #cd nginx-1.13.1
 
 # Install source and get folder name (could break if apt-get messages changes)
-apt-get source nginx
-apt-get build-dep nginx
+apt-get source -y nginx
+apt-get build-dep -y nginx
 
 NGINX_VER="1.12.0"  # This is the version provided by the nginx repository for Trustry
 cd nginx-${NGINX_VER}
