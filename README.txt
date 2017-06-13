@@ -9,3 +9,6 @@ $ docker run -ti --name nginxbuild nginxbuild:latest
 Once inside the container:
 
 root@63569f00e283:/tmp#  ./setupnginxluapagespeed.sh
+
+After copying deb packages from /tmp/build to your localhost outside docker, just remove the container to free space
+
