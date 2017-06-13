@@ -147,5 +147,7 @@ cp $CURDIR/rules-1.12.0 debian/rules
 sudo dpkg-buildpackage -b
 
 cd ..
+cp *deb /tmp/output
 
-echo -e "\mAfter copying deb packages from /tmp/build to your localhost outside docker, just remove the container to free space"
+
+echo -e "\mAfter copying deb packages from /tmp/output to your localhost outside docker, just remove the container to free space"
