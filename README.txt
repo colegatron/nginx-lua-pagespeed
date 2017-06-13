@@ -12,3 +12,9 @@ $ mkdir /tmp/output ; \
 $ docker rm nginxbuild
 
 
+
+Notice: Nginx and the modules compiled have some dependencies:
+
+$ sudo apt-get install libgd3 liblua5.1-0 libperl5.18 libxslt1.1 libfontconfig1 libvpx1 libxpm4 fontconfig-config fonts-dejavu-core ttf-bitstream-vera fonts-freefont-ttf gsfonts-x11 gsfonts xfonts-utils libfontenc1 libxfont1 x11-common xfonts-encodings
+$ sudo dpkg -i nginx-common_1.12.0-1+trusty1_all.deb nginx-extras_1.12.0-1+trusty1_amd64.deb nginx_1.12.0-1+trusty1_all.deb libnginx-mod-*deb
+
