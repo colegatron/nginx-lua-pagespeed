@@ -122,26 +122,38 @@ extras_configure_flags := \
 			--with-stream=dynamic \
 			--with-stream_ssl_module \
 			--with-stream_ssl_preread_module \
-			--add-dynamic-module=$(MODULESDIR)/headers-more-nginx-module \
-			--add-dynamic-module=$(MODULESDIR)/nginx-auth-pam \
-			--add-dynamic-module=$(MODULESDIR)/nginx-cache-purge \
-			--add-dynamic-module=$(MODULESDIR)/nginx-dav-ext-module \
-			--add-dynamic-module=$(MODULESDIR)/nginx-development-kit \
-			--add-dynamic-module=$(MODULESDIR)/nginx-echo \
-			--add-dynamic-module=$(MODULESDIR)/ngx-fancyindex \
-			--add-dynamic-module=$(MODULESDIR)/nchan \
-			--add-dynamic-module=$(MODULESDIR)/nginx-lua \
-			--add-dynamic-module=$(MODULESDIR)/nginx-upload-progress \
-			--add-dynamic-module=$(MODULESDIR)/nginx-upstream-fair \
-			--add-dynamic-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
+			--add-module=$(MODULESDIR)/headers-more-nginx-module \
+			--add-module=$(MODULESDIR)/nginx-auth-pam \
+			--add-module=$(MODULESDIR)/nginx-cache-purge \
+			--add-module=$(MODULESDIR)/nginx-dav-ext-module \
+			--add-module=$(MODULESDIR)/nginx-development-kit \
+			--add-module=$(MODULESDIR)/nginx-echo \
+			--add-module=$(MODULESDIR)/ngx-fancyindex \
+			--add-module=$(MODULESDIR)/nchan \
+			--add-module=$(MODULESDIR)/nginx-lua \
+			--add-module=$(MODULESDIR)/nginx-upload-progress \
+			--add-module=$(MODULESDIR)/nginx-upstream-fair \
+			--add-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
 			--with-google_perftools_module   \
 			--add-module=/tmp/build/headers-more-nginx-module-0.19rc1  \
 			--add-module=/tmp/build/nginx-http-user-agent  \
-			--add-module=/tmp/build/ngx_pagespeed-${NPS_VERSION}-beta \
+			--add-module=/tmp/build/ngx_pagespeed-1.12.34.2-beta \
 			--add-module=/tmp/build/form-input-nginx-module \
 			--add-module=/tmp/build/iconv-nginx-module \
 			--add-module=/tmp/build/redis2-nginx-module-0.14 
 
+			#--add-dynamic-module=$(MODULESDIR)/headers-more-nginx-module \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-auth-pam \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-cache-purge \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-dav-ext-module \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-development-kit \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-echo \
+			#--add-dynamic-module=$(MODULESDIR)/ngx-fancyindex \
+			#--add-dynamic-module=$(MODULESDIR)/nchan \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-lua \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-upload-progress \
+			#--add-dynamic-module=$(MODULESDIR)/nginx-upstream-fair \
+			#--add-dynamic-module=$(MODULESDIR)/ngx_http_substitutions_filter_module
 
 %:
 	dh $@ --with systemd

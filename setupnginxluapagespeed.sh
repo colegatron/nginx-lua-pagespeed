@@ -54,10 +54,10 @@ git clone git://github.com/calio/form-input-nginx-module.git
 
 # Nginx pagespeed
 NPS_VERSION=1.12.34.2
-wget https://github.com/pagespeed/ngx_pagespeed/archive/v${NPS_VERSION}-beta.zip
-unzip -o v${NPS_VERSION}-beta.zip
-cd ngx_pagespeed-${NPS_VERSION}-beta/
-psol_url=https://dl.google.com/dl/page-speed/psol/${NPS_VERSION}.tar.gz
+wget https://github.com/pagespeed/ngx_pagespeed/archive/v1.12.34.2-beta.zip
+unzip -o v1.12.34.2-beta.zip
+cd ngx_pagespeed-1.12.34.2-beta/
+psol_url=https://dl.google.com/dl/page-speed/psol/1.12.34.2.tar.gz
 [ -e scripts/format_binary_url.sh ] && psol_url=$(scripts/format_binary_url.sh PSOL_BINARY_URL)
 wget ${psol_url}
 tar -xzvf $(basename ${psol_url})  # extracts to psol/
