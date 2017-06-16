@@ -1,0 +1,115 @@
+Format: 1.8
+Date: Sun, 14 May 2017 12:51:31 -0400
+Source: nginx
+Binary: nginx nginx-doc nginx-common nginx-full nginx-light nginx-extras libnginx-mod-http-geoip libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libnginx-mod-http-perl libnginx-mod-http-auth-pam libnginx-mod-http-lua libnginx-mod-http-ndk libnginx-mod-nchan libnginx-mod-http-echo libnginx-mod-http-upstream-fair libnginx-mod-http-headers-more-filter libnginx-mod-http-cache-purge libnginx-mod-http-fancyindex libnginx-mod-http-uploadprogress libnginx-mod-http-subs-filter libnginx-mod-http-dav-ext
+Architecture: all amd64
+Version: 1.12.0-1+trusty1
+Distribution: trusty
+Urgency: medium
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@lists.alioth.debian.org>
+Changed-By: Thomas Ward <teward@ubuntu.com>
+Description: 
+ libnginx-mod-http-auth-pam - PAM authentication module for Nginx
+ libnginx-mod-http-cache-purge - Purge content from Nginx caches
+ libnginx-mod-http-dav-ext - WebDAV missing commands support for Nginx
+ libnginx-mod-http-echo - Bring echo and more shell style goodies to Nginx
+ libnginx-mod-http-fancyindex - Fancy indexes module for the Nginx
+ libnginx-mod-http-geoip - GeoIP HTTP module for Nginx
+ libnginx-mod-http-headers-more-filter - Set and clear input and output headers for Nginx
+ libnginx-mod-http-image-filter - HTTP image filter module for Nginx
+ libnginx-mod-http-lua - Lua module for Nginx
+ libnginx-mod-http-ndk - Nginx Development Kit module
+ libnginx-mod-http-perl - Perl module for Nginx
+ libnginx-mod-http-subs-filter - Substitution filter module for Nginx
+ libnginx-mod-http-uploadprogress - Upload progress system for Nginx
+ libnginx-mod-http-upstream-fair - Nginx Upstream Fair Proxy Load Balancer
+ libnginx-mod-http-xslt-filter - XSLT Transformation module for Nginx
+ libnginx-mod-mail - Mail module for Nginx
+ libnginx-mod-nchan - Fast, flexible pub/sub server for Nginx
+ libnginx-mod-stream - Stream module for Nginx
+ nginx      - small, powerful, scalable web/proxy server
+ nginx-common - small, powerful, scalable web/proxy server - common files
+ nginx-doc  - small, powerful, scalable web/proxy server - documentation
+ nginx-extras - nginx web/proxy server (extended version)
+ nginx-full - nginx web/proxy server (standard version)
+ nginx-light - nginx web/proxy server (basic version)
+Changes: 
+ nginx (1.12.0-1+trusty1) trusty; urgency=medium
+ .
+   * debian/control: Use older DebHelper (9) for Xenial and Trusty.
+     This resolves a dependency issue and a depwait problem.
+Checksums-Sha1: 
+ b6b17740723fa0334315d0c3d08401703d865bfd 24234 nginx_1.12.0-1+trusty1_all.deb
+ 9fa397386e64d2dc9bb41a95f93fa9edf0054e8d 35834 nginx-doc_1.12.0-1+trusty1_all.deb
+ d70d51bb6aaafbbdbd859de57b0ebf9775d84f6c 57064 nginx-common_1.12.0-1+trusty1_all.deb
+ f5d95412aa9f0f6151557c012056f31201687659 405594 nginx-full_1.12.0-1+trusty1_amd64.deb
+ b3a3febb0b4286a44dc0663ea39ca832338a521f 382156 nginx-light_1.12.0-1+trusty1_amd64.deb
+ 6a28978d5dd4c4432270b459d5e14905e536130e 417832 nginx-extras_1.12.0-1+trusty1_amd64.deb
+ d41421154f040c2a1fb7e17fb6de8dff652760eb 29768 libnginx-mod-http-geoip_1.12.0-1+trusty1_amd64.deb
+ 79be029f8d78241030b1b80c5bd5525624a60ab2 32878 libnginx-mod-http-image-filter_1.12.0-1+trusty1_amd64.deb
+ 4f2034a6f40c5de50092a96a8f27ce0282acb359 31646 libnginx-mod-http-xslt-filter_1.12.0-1+trusty1_amd64.deb
+ e42e08b3959e575d277b358e026a79e92d5a4c76 58780 libnginx-mod-mail_1.12.0-1+trusty1_amd64.deb
+ c2b7d91e669942b211571e367262645af379c6f0 80962 libnginx-mod-stream_1.12.0-1+trusty1_amd64.deb
+ 0333346e38e275774c30ed808fdcbaad4e054571 39988 libnginx-mod-http-perl_1.12.0-1+trusty1_amd64.deb
+ 9be89c9d5fc6909bdd05a61951fcfc54270ddebb 28448 libnginx-mod-http-auth-pam_1.12.0-1+trusty1_amd64.deb
+ c5dcb3ea2b9d36a86fb98a433b655a2a18cf8c04 166826 libnginx-mod-http-lua_1.12.0-1+trusty1_amd64.deb
+ ee64b22dc7cc7be15c32cce38e54988b7c8bff70 28958 libnginx-mod-http-ndk_1.12.0-1+trusty1_amd64.deb
+ 4b7f03d88e8d46553db75ca61516779a5cf0e818 182538 libnginx-mod-nchan_1.12.0-1+trusty1_amd64.deb
+ 5e0cc1bba04d0e9b46b84f58af3112d11b2021dc 39862 libnginx-mod-http-echo_1.12.0-1+trusty1_amd64.deb
+ aa865af93de97d32a284eae35eab91b0cbbd9c43 31656 libnginx-mod-http-upstream-fair_1.12.0-1+trusty1_amd64.deb
+ 86352f62fa6b73fe3e1e0e57fb533c0da5677b0f 33774 libnginx-mod-http-headers-more-filter_1.12.0-1+trusty1_amd64.deb
+ e915ca9b786f0de4cfeae443de225fb9b961b830 30816 libnginx-mod-http-cache-purge_1.12.0-1+trusty1_amd64.deb
+ ddbaea1750e22a3a92579a0791b56218af497a20 33646 libnginx-mod-http-fancyindex_1.12.0-1+trusty1_amd64.deb
+ fe00ea7bc695581f2c006a41e546fa4b4c856262 34882 libnginx-mod-http-uploadprogress_1.12.0-1+trusty1_amd64.deb
+ 4a4048c1c1b879710b3966e2b5241892955941a9 31494 libnginx-mod-http-subs-filter_1.12.0-1+trusty1_amd64.deb
+ 7b31630bcbc765b34cac4893d624446ffd6ad1ff 30334 libnginx-mod-http-dav-ext_1.12.0-1+trusty1_amd64.deb
+Checksums-Sha256: 
+ fc9b1b7b5f401afc8ebec27ea69d7e535921512f7af3bb5f3a3ff348fef31843 24234 nginx_1.12.0-1+trusty1_all.deb
+ 74ddaadf6e9fa2e60165cae2e711d2e9d5c0a217a2bf7b5607467d1ffa6a090d 35834 nginx-doc_1.12.0-1+trusty1_all.deb
+ 6a0b24f151661865032a2874ef05c8955f3833a6902f1021d7f644450e845a4a 57064 nginx-common_1.12.0-1+trusty1_all.deb
+ 351f0e9fa8b9e07bdb7507518517d496711832ea229fb1cc1ecce784d499694a 405594 nginx-full_1.12.0-1+trusty1_amd64.deb
+ 8ef0ca8647549ba456a8a36ed98b78328f83847da2dcdb5d83c166a1618384fe 382156 nginx-light_1.12.0-1+trusty1_amd64.deb
+ 892b87e5e6e4cc13d493d22a7ced951470243f2b2c75f39918bc8c6c72a3ba08 417832 nginx-extras_1.12.0-1+trusty1_amd64.deb
+ 1a67b3fc91e5ac7280397dad1b0e9d9436d4386704d3380c2726d314750793eb 29768 libnginx-mod-http-geoip_1.12.0-1+trusty1_amd64.deb
+ 844753d4d9de860c675479dfd06b074a2f392fc990cf67ebb3e56fcea5eb4659 32878 libnginx-mod-http-image-filter_1.12.0-1+trusty1_amd64.deb
+ c2f347b27da571ef4ad6977c413b1d8ca93d60368c606f640f7eca1219f7cc61 31646 libnginx-mod-http-xslt-filter_1.12.0-1+trusty1_amd64.deb
+ 2323febddcc3d95b866691180820f9535c34eb807074b036d8ef511bfe28661a 58780 libnginx-mod-mail_1.12.0-1+trusty1_amd64.deb
+ fc74c595bbf8f3739798c64f8e36ffbed4964b2e83d7f8eced76ee53155b9cc4 80962 libnginx-mod-stream_1.12.0-1+trusty1_amd64.deb
+ bb69e199528e0bdf6bbf8e7520589ffdba85b5492baf967f85da48a643d76163 39988 libnginx-mod-http-perl_1.12.0-1+trusty1_amd64.deb
+ b71b384856d9f3e761ed32d98ebea3b6f40a54b62698d21134c734548ddd4188 28448 libnginx-mod-http-auth-pam_1.12.0-1+trusty1_amd64.deb
+ 3a4032e868132a193a96914f8c40ac315fac4334273c446a482744153e6a8886 166826 libnginx-mod-http-lua_1.12.0-1+trusty1_amd64.deb
+ 29e1c6c17f6debf10fc284c26a7b89f4cd5a8a27b9a16bbf9da90375d84c99eb 28958 libnginx-mod-http-ndk_1.12.0-1+trusty1_amd64.deb
+ 14176d0c1a256896d271d1469cd72e0a33b5033f3f3a25424e9992e3d8b6fa50 182538 libnginx-mod-nchan_1.12.0-1+trusty1_amd64.deb
+ 2d64a2c0221e27f2af44542defbddb25eda622ac250ae3623c38dd58147c5a56 39862 libnginx-mod-http-echo_1.12.0-1+trusty1_amd64.deb
+ ec64319b13db7d0efdb4965bdcb35754dda9dd5c84b7ba95971d941d4b5b9708 31656 libnginx-mod-http-upstream-fair_1.12.0-1+trusty1_amd64.deb
+ d3ace67abd6a91234014185dbddd9e5a2ec56055336b5b641b56575e0dec3417 33774 libnginx-mod-http-headers-more-filter_1.12.0-1+trusty1_amd64.deb
+ f359571dabab760931d907d42f179ebb9c14757296bd868fd52357b2004f77dc 30816 libnginx-mod-http-cache-purge_1.12.0-1+trusty1_amd64.deb
+ 51bcbd00a93b3cdb084ef4f401a4a4f301e80c174e4fcb1ade850e481cbb430b 33646 libnginx-mod-http-fancyindex_1.12.0-1+trusty1_amd64.deb
+ bdc1c50fc134c22737e2c988ee6f6f7687182868794be58e954343171c30787b 34882 libnginx-mod-http-uploadprogress_1.12.0-1+trusty1_amd64.deb
+ 32e80765519ddde6bba5335399896ec2ee0d52c324916b5f6230cdc9bc59314e 31494 libnginx-mod-http-subs-filter_1.12.0-1+trusty1_amd64.deb
+ b9e901a98e2dd3c7121238e71923c01f7ae524e452f4e6676786f867adffb154 30334 libnginx-mod-http-dav-ext_1.12.0-1+trusty1_amd64.deb
+Files: 
+ ffa0b66ce2aba40f6d3d587a591f32f9 24234 httpd optional nginx_1.12.0-1+trusty1_all.deb
+ 32b2d6d47ce67a01a05663faf8b43b0c 35834 doc optional nginx-doc_1.12.0-1+trusty1_all.deb
+ 900d2f859b2331a9d350bf21a3a2d3ba 57064 httpd optional nginx-common_1.12.0-1+trusty1_all.deb
+ 6369cdedf7737eef0440ff70d0bc9947 405594 httpd optional nginx-full_1.12.0-1+trusty1_amd64.deb
+ fc00e3d100c711e22bd01b1d147667c4 382156 httpd extra nginx-light_1.12.0-1+trusty1_amd64.deb
+ 9262c22c4181c7715a013c09d4a69376 417832 httpd extra nginx-extras_1.12.0-1+trusty1_amd64.deb
+ 989cfb0980d971bef5e687f6259882ca 29768 httpd optional libnginx-mod-http-geoip_1.12.0-1+trusty1_amd64.deb
+ d2607abb9093c0e17842d7875bf21b94 32878 httpd optional libnginx-mod-http-image-filter_1.12.0-1+trusty1_amd64.deb
+ 9445a0be495ec92572f4be698303ec2e 31646 httpd optional libnginx-mod-http-xslt-filter_1.12.0-1+trusty1_amd64.deb
+ a733177d0061bcd4f56e8791aca8394d 58780 httpd optional libnginx-mod-mail_1.12.0-1+trusty1_amd64.deb
+ b8ced980c0d83b19d1190f8b9c0dfdf0 80962 httpd optional libnginx-mod-stream_1.12.0-1+trusty1_amd64.deb
+ 7bf199000072b629194b1b9ddb508b2c 39988 httpd optional libnginx-mod-http-perl_1.12.0-1+trusty1_amd64.deb
+ 9015c0b96439448f734d8e774109a65e 28448 httpd optional libnginx-mod-http-auth-pam_1.12.0-1+trusty1_amd64.deb
+ b35a62a0e87db97f5978892b7b36a60b 166826 httpd optional libnginx-mod-http-lua_1.12.0-1+trusty1_amd64.deb
+ ede9bee15d3062c535ec21fe35db9b12 28958 httpd optional libnginx-mod-http-ndk_1.12.0-1+trusty1_amd64.deb
+ ca69d0862fa5538e9ed912f104f92095 182538 httpd optional libnginx-mod-nchan_1.12.0-1+trusty1_amd64.deb
+ 1b379ac1fc297440f6a2fec4c19f983a 39862 httpd optional libnginx-mod-http-echo_1.12.0-1+trusty1_amd64.deb
+ ff8b559e0140172221a5e4a00fb0ab0b 31656 httpd optional libnginx-mod-http-upstream-fair_1.12.0-1+trusty1_amd64.deb
+ c0bf02f6c4b9f3d7554e0593a11e6fdf 33774 httpd optional libnginx-mod-http-headers-more-filter_1.12.0-1+trusty1_amd64.deb
+ 707c6c963f093e478c69fba51140c0ca 30816 httpd optional libnginx-mod-http-cache-purge_1.12.0-1+trusty1_amd64.deb
+ 07888ae11f473c8b971d39b9c1582082 33646 httpd optional libnginx-mod-http-fancyindex_1.12.0-1+trusty1_amd64.deb
+ e7af6a18f19e904c8b82460dd75fefca 34882 httpd optional libnginx-mod-http-uploadprogress_1.12.0-1+trusty1_amd64.deb
+ ac19a9d067d057ea3fc6d655a77961db 31494 httpd optional libnginx-mod-http-subs-filter_1.12.0-1+trusty1_amd64.deb
+ 736772ef02c0d8f89180ef697b5e5c17 30334 httpd optional libnginx-mod-http-dav-ext_1.12.0-1+trusty1_amd64.deb
