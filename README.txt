@@ -15,37 +15,4 @@ $ mkdir /tmp/output ; \
 $ docker rm nginxbuild
 
 
-
-Notice: Nginx and the modules compiled have some dependencies:
-
-$ sudo apt-get install libgd3 \
-	liblua5.1-0 libperl5.18 libxslt1.1 libfontconfig1 \
- 	libvpx1 libxpm4 fontconfig-config fonts-dejavu-core \
- 	ttf-bitstream-vera fonts-freefont-ttf gsfonts-x11 gsfonts \
- 	xfonts-utils libfontenc1 libxfont1 x11-common xfonts-encodings \
- 	libfreetype6 libjpeg8 libtiff5 libgeoip1 libxml2 libx11-6 \
- 	libjpeg-turbo8 libjbig0 libxcb1 libx11-data libxdmcp6 libxau6
-
-
-$ sudo dpkg -i nginx-common_1.12.0-1+trusty1_all.deb \
-	nginx-extras_1.12.0-1+trusty1_amd64.deb \
-	libnginx-mod-http-auth-pam_1.12.0-1+trusty1_amd64.deb \
-	libnginx-mod-http-cache-purge_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-dav-ext_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-echo_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-fancyindex_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-geoip_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-headers-more-filter_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-xslt-filter_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-upstream-fair_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-uploadprogress_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-subs-filter_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-perl_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-lua_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-image-filter_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-http-ndk_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-stream_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-nchan_1.12.0-1+trusty1_amd64.deb \
- 	libnginx-mod-mail_1.12.0-1+trusty1_amd64.deb
-
-
+Install packages from /tmp/output. nginx-extras nginx-common and probably some deps.
